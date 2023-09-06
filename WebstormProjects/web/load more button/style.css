@@ -1,0 +1,44 @@
+.main{
+    background: linear-gradient(to right, orangered ,mediumvioletred);
+}
+.container{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: white;
+}
+.wraper{
+    flex: 1 1 200px;
+    margin: 15px;
+    display: none;
+
+}
+.btncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    padding: 6px;
+    font-size: 20px;
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+}
+.wraper:nth-child(1){
+    display: block;
+
+}
+.wraper:nth-child(2){
+    display: block;
+
+}

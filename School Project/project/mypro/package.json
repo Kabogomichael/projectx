@@ -1,0 +1,12 @@
+{
+  "name": "mypro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "tailwind test src/styles.css -o  mypro/styles.css"
+  
+  },
+  "author": "",
+  "license": "ISC"
+}

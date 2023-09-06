@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loading more</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main">
+<div class="container">
+    <div class="wraper">
+        <img src="depositphotos_59120237-stock-photo-row-of-laptops.jpg" alt="laptop" >
+    </div>
+    <div class="wraper">
+        <img src="How-to-Choose-a-Laptop-Gear-GettyImages-1235728903.webp" alt="laptop" >
+    </div>
+    <div class="wraper">
+        <img src="laptop-under-500-2048px-acer-1.jpg" alt="laptop" >
+    </div>
+    <div class="wraper">
+        <img src="photo-1517336714731-489689fd1ca8.jpeg" alt="laptop" >
+    </div>
+    <div class="wraper">
+        <img src="image1.webp" alt="laptop" >
+    </div>
+    <div class="wraper">
+        <img src="image2.webp" alt="laptop" >
+    </div>
+    <div class="wraper">
+        <img src="image3.jpg" alt="laptop"  >
+    </div>
+    <div class="wraper">
+        <img src="image4.jpeg" alt="laptop" >
+    </div>
+
+</div>
+<div class="btncontainer">
+    <button class="btn">Loading more</button>
+</div>
+
+<script>
+    let wraper = document.querySelectorAll('.wraper');
+    let  btn = document.querySelector('.btn');
+    let currenting = 2
+    btn.addEventListener('click',function() {
+        for (let i =currenting;i<currenting+2;i++){
+            if (wraper[i]){
+                wraper[i].style.display='block';
+            }
+
+        }
+        currenting += 2;
+        if (currenting >= wraper.length){
+            event.target.style.display='none'
+        }
+    })
+
+</script>
+</body>
+</html>
